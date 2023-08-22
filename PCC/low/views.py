@@ -9,3 +9,6 @@ def index(request):
 
 def carrinho(request):
     return render(request, 'carrinho.html')
+
+def sobre(request):
+    return render(request, 'sobre.html')

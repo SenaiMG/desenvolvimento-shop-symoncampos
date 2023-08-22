@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="pt-br" data-bs-theme="auto">
   <head>
@@ -6,8 +7,8 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/checkout/">
     <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-    <link href="assets/css/checkout.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="{% static 'assets/css/checkout.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
     <title>Template-Bootstrap v5.3</title>
   </head>
   <body class="bg-body-tertiary">
@@ -38,7 +39,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav me-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../index.html"><img src="assets/img/loja.png" alt="Loja" width="32px" height="32px"></a>
+                  <a class="nav-link active" aria-current="page" href="../index.html"><img src="{% static 'assets/img/loja.png' %}" alt="Loja" width="32px" height="32px"></a>
                 </li>
                 <ul class="navbar-nav flex-grow-1 justify-content-between">
                     <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
@@ -46,7 +47,7 @@
                     <li class="nav-item"><a class="nav-link" href="#suporte">Suporte</a></li>
                     <li class="nav-item"><a class="nav-link" href="../produtos.html">Preços</a></li>
                     <li class="nav-item"><a class="nav-link" href="../carrinho.html">
-                      <img src="assets/img/carrinho.png" alt="carrinho">
+                      <img src="{% static 'assets/img/carrinho.png' %}" alt="carrinho">
                     </a></li>
                 </ul>
               </ul>
@@ -144,7 +145,7 @@
 
         <!--Informação-->
         <div class="py-5 text-center">
-          <img class="d-block mx-auto mb-4" src="assets/img/loja.png" alt="loja" width="72" height="72">
+          <img class="d-block mx-auto mb-4" src="{% static 'assets/img/loja.png' %}" alt="loja" width="72" height="72">
           <h2>Formulário de Checkout</h2>
           <p class="lead">Coloque suas informações de pagamento para que possamos realizar a compra dos produtos, agradecemos por comprar em nossa loja.</p>
         </div>
@@ -362,7 +363,7 @@
       <footer class="container py-5">
           <div class="row">
             <div class="col-12 col-md">
-              <a class="nav-link active" aria-current="page" href="#"><img src="assets/img/loja.png" alt="Loja" width="32px" height="32px"></a>
+              <a class="nav-link active" aria-current="page" href="#"><img src="{% static 'assets/img/loja.png' %}" alt="Loja" width="32px" height="32px"></a>
               <small class="d-block mb-3 text-body-secondary">© 2017–2023 TemplateShop</small>
             </div>
             <div class="col-6 col-md">
@@ -407,7 +408,7 @@
           </div>
       </footer>
     </div>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/checkout.js"></script>
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/checkout.js' %}"></script>
   </body>
 </html>
