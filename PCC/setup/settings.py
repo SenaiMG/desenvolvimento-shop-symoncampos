@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'setup.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Symin',
+        'NAME': 'shops',
         'USER': 'root',
         'PASSWORD': '', 
         'HOST' : 'localhost',

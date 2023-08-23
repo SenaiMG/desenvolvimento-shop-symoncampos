@@ -3,7 +3,7 @@ from datetime import datetime
 
 # Create your models here.
 
-class Site(models.Model):
+class shop(models.Model):
     nome_card = models.CharField(max_length=200)
     description = models.TextField()
     path = models.ImageField()

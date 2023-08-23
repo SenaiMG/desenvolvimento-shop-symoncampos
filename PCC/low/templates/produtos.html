@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.cs' %}s">
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
     <title>Template-Bootstrap v5.3</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav me-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../index.html"><img src="assets/img/loja.png" alt="Loja" width="32px" height="32px"></a>
+                  <a class="nav-link active" aria-current="page" href="../index.html"><img src="{% static 'assets/img/loja.png' %}" alt="Loja" width="32px" height="32px"></a>
                 </li>
                 <ul class="navbar-nav flex-grow-1 justify-content-between">
                     <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
@@ -28,7 +28,7 @@
                     <li class="nav-item"><a class="nav-link" href="#suporte">Suporte</a></li>
                     <li class="nav-item"><a class="nav-link" href="../produtos.html">Preços</a></li>
                     <li class="nav-item"><a class="nav-link" href="../carrinho.html">
-                      <img src="assets/img/carrinho.png" alt="carrinho">
+                      <img src="{% static 'assets/img/carrinho.png' %}" alt="carrinho">
                     </a></li>
                 </ul>
               </ul>
@@ -121,7 +121,7 @@
     <footer class="container py-5">
         <div class="row">
           <div class="col-12 col-md">
-            <a class="nav-link active" aria-current="page" href="#"><img src="assets/img/loja.png" alt="Loja" width="32px" height="32px"></a>
+            <a class="nav-link active" aria-current="page" href="#"><img src="{% static 'assets/img/loja.png' %}" alt="Loja" width="32px" height="32px"></a>
             <small class="d-block mb-3 text-body-secondary">© 2017–2023 TemplateShop</small>
           </div>
           <div class="col-6 col-md">
